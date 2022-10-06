@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "group",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^([a-zA-Z0-9]{1,}[- ]{0,}[a-zA-Z0-9]{1,}){1,}([- ]{0,}[a-zA-Z0-9]{1,}){0,}$"
+    },
+    "dueDate": {
+      "type": "string"
+    },
+    "done": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name",
+    "dueDate",
+    "done"
+  ],
+  "additionalProperties": false
+}

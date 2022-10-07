@@ -1,3 +1,5 @@
+org: midekreative
+console: true
 service: serverless-mide-todo-app
 
 plugins:
@@ -36,6 +38,16 @@ provider:
         - Effect: Allow
           Action:
             - xray:PutTelemetryRecords
+            - xray:PutTraceSegments
+            - xray:GetSamplingRules
+            - xray:GetSamplingTargets
+            - xray:GetSamplingStatisticSummaries
+            - xray:BatchGetTraces
+            - xray:GetServiceGraph
+            - xray:GetTraceGraph
+            - xray:GetTraceSummaries
+            - xray:GetGroups
+            - xray:GetGroup
             - xray:PutTraceSegments
           Resource: "*"
 

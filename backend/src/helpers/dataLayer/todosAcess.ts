@@ -8,6 +8,7 @@ import { TodoUpdate } from '../../models/TodoUpdate';
 
 const XAWS = AWSXRay.captureAWS(AWS)
 
+
 // const logger = createLogger('TodosAccess')
 
 // TODO: Implement the dataLayer logic
